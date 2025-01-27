@@ -8,6 +8,18 @@
   --bg-image: url("../images/cover-image-dark.png");
   --bg-color: #000028;
   --accent-color: #ff0070;
+  --accent-color-on-background: #000028;
+  --title-color: #DB00FF;
+  --title-shadow-color:#ff0070;
+  --title-line-height: 82.5%;
+  --title-font-size-sm: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-font-size-lg: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --header__lamp-icon: #ff0070;;
+  --decorative-corner-color: #ff0070;;
+  --button-color: #ff0070; /*var(--accent-color);*/
+  --button-hover-color: #ff007066;
+  --button-focus-color: #ff0070;
+  --button-active-color: #ff0070;
 
-  --header__lamp-icon: #ff0070;
+
 }
