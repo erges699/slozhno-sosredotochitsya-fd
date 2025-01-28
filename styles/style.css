@@ -194,7 +194,19 @@ header.decorated-zone::after {
   }
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 0 10px;
+}
 
+@media (min-width: 768px) {
+  .main {
+    gap: 80px;
+    margin: 0 20px;
+  }
+}
 
 
 .footer {
