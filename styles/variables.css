@@ -23,6 +23,7 @@
   --button-hover-color: #ff007066;
   --button-focus-color: var(--accent-color);
   --button-active-color: var(--accent-color);
-
+  --frame-color: #ff0070;
+  --section-header-color: var(--accent-color);
 
 }
