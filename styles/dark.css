@@ -8,9 +8,39 @@
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
-  */
+  
   --accent-color: #ff0070;
+  --header__lamp-icon: var(--accent-color);*/
+  --main-font: 'IBM Plex mono';
+  --main-font-size: 18px;
+  --main-font-line-height: 130%;
+  --main-text-color: #f1b2ce;
+  --main-text-font-weight: 400;
+
+  --interval-sm: 10px;
+  --interval-lg: 20px;
+
+  --header-bg-image: url("../images/cover-image-dark.png");
+  --background-color: #000028;
+  --text-color-on-background: #000028;
+
+  --accent-color: #ff0070;
+  
+  --title-color: #db00ff;
+  --title-shadow-color:var(--accent-color);
+  --title-line-height: 83%;
+  --title-font-size-sm: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-font-size-lg: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-font-weight: 700;
+
   --header__lamp-icon: var(--accent-color);
+  --decorative-corner-color: var(--accent-color);
+  --button-color: var(--accent-color);
+  --button-hover-color: #ff007066;
+  --button-focus-color: var(--accent-color);
+  --button-active-color: var(--accent-color);
+  --frame-color: #ff0070;
+  --section-header-color: var(--accent-color);
 }
 
 .theme-dark .page {
