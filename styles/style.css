@@ -109,8 +109,18 @@
   line-height: var(--main-font-line-height);
 }
 
-.title-decor{
+.regular-heading {
+  font-size: var(--main-font-size);
+  font-weight: var(--main-text-font-weight);
+  line-height: var(--main-font-line-height);
+}
+
+.title-decor {
   background-color: var(--accent-color);
+}
+
+.title-bg-font-color {
+  color: var(--background-color)
 }
 
 .decorated-zone {
@@ -146,7 +156,7 @@ header.decorated-zone::after {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 50px;
-  margin-block-start: 40px;
+  /*margin-block-start: 40px;*/
   color: var(--main-text-color);
   font-weight: var(--main-text-font-weight);
 }
