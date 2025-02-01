@@ -2,7 +2,11 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  font-family: var(--main-font);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: var(--main-font, sans);
   font-size: var(--main-font-size);
   inline-size: 100%;
   background-image: var(--background-image);
@@ -15,7 +19,7 @@
 }
 
 .header {
-  /*position: relative;*/
+  position: relative;
   display: grid;
   grid-template-rows: auto max-content auto;
   align-items: center;
@@ -72,7 +76,7 @@
 }
 
 .header__theme-menu-button:focus {
-  outline: none;
+  outline-color: transparent;
 }
 
 .header__theme-menu-button:focus-visible {
@@ -87,10 +91,14 @@
 
 .header__title {
   align-self: flex-start;
-  color: var(--title-color);
   text-shadow: 4px 4px var(--accent-color);
+}
+
+.header__footer-commons {
+  color: var(--title-color);
   font-size: var(--title-font-size-sm);
-  line-height: var(--title-line-height);
+  font-weight: var(--title-font-weight);
+  line-height: var(--title-line-height);  
 }
 
 .header__description {
@@ -148,15 +156,11 @@
   border-left: 1px solid var(--accent-color);
 }
 
-header.decorated-zone::after {
-  inset-block-end: 20px;
-}
-
 .main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 50px;
-  /*margin-block-start: 40px;*/
+  margin-block-start: 40px;
   color: var(--main-text-color);
   font-weight: var(--main-text-font-weight);
 }
@@ -272,11 +276,7 @@ header.decorated-zone::after {
   margin-block-start: 10px;
   justify-self: center;
   align-self: center;
-  color: var(--title-color);
   text-shadow: 2px 2px var(--accent-color);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  line-height: var(--title-line-height);
-  font-weight: var(--title-font-weight);
 }
 
 footer.decorated-zone::before {
@@ -450,8 +450,6 @@ footer.decorated-zone::before {
   .section-description-list {
     grid-column: 2/4;
   }
-
-
 
   .footer__title {
     font-size: var(--title-font-size-lg);
