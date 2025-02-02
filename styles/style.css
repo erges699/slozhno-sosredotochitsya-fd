@@ -183,17 +183,14 @@
 
 .so-hard {
   grid-column: 1/4;
-
 }
 
 .to-reduce {
   grid-column: 1/4;
-
 }
 
 .better-then {
   grid-column: 1/4;
-
 }
 
 .in-pictures {
@@ -480,7 +477,7 @@ footer.decorated-zone::after {
 
   .section-header {
     grid-column: span 1;
-    grid-row: span 3;
+    grid-row: span 1;
   }
 
   .section-title {
