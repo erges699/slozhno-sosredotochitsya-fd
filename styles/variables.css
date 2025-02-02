@@ -3,21 +3,25 @@
   и их переопределение под различные устройства
 */
 :root {
+  --accent-color: #FF0070;
+  --accent-hover-color: rgb(255 0  112/ 0.4);
   --main-font: 'IBM Plex mono';
   --main-font-size: 18px;
   --main-font-line-height: 130%;
   --main-text-color: #F1B2CE;
-  --main-text-font-weight: 400;
+  --main-heading-color: #000028;
+  --main-accent-heading-color: var(--accent-color);
+  --main-regular-font-weight: 400;
+  --main-bold-font-weight: 700;
 
   --background-image: url("../images/cover-image-dark.png");
   --background-color: #000028;
 
-  --accent-color: #FF0070;
-  --accent-hover-color: rgb(255 0  112/ 0.4);
+
   --title-color: #DB00FF;
   --button-color: var(--accent-color);
   --title-line-height: 83%;
   --title-font-size-sm: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --title-font-size-lg: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  --title-font-weight: 700;
+  /*--title-font-weight: 700;*/
 }

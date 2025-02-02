@@ -97,51 +97,60 @@
 .header__footer-commons {
   color: var(--title-color);
   font-size: var(--title-font-size-sm);
-  font-weight: var(--title-font-weight);
+  font-weight: var(--main-bold-font-weight);
   line-height: var(--title-line-height);  
 }
 
 .header__description {
   display: flex;
   align-items: center;
+  justify-self: end;
   margin-block-start: -20px;
   max-inline-size: 100%;
-  justify-self: end;
-  color: var(--background-color);
   height: min-content;
+  font-size: var(--main-font-size);
+  line-height: var(--main-font-line-height);
+  font-weight: var(--main-bold-font-weight);
 }
 
-.heading {
-  font-size: var(--main-font-size);
-  font-weight: var(--title-font-weight);
-  line-height: var(--main-font-line-height);
+.regular-weight {
+  font-weight: var(--main-regular-font-weight);
 }
 
-.regular-heading {
-  font-size: var(--main-font-size);
-  font-weight: var(--main-text-font-weight);
-  line-height: var(--main-font-line-height);
+.bold-weight {
+  font-weight: var(--main-bold-font-weight);
 }
 
 .title-decor {
   background-color: var(--accent-color);
+  color: var(--main-heading-color);
 }
 
-.title-bg-font-color {
-  color: var(--background-color)
+.heading-accent-color {
+  color: var(--main-accent-heading-color)
 }
 
 .decorated-zone {
   position: relative;
 }
 
+/* при таком подходе все элементы decorated-zone получают ::before, ::after
+и ломается индикатор REC
+.decorated-zone::before,
+::after {
+  content: "";
+  position: absolute;
+  block-size: 25px; 
+  inline-size: 25px;
+}*/
+
 .decorated-zone::before {
   content: "";
   position: absolute;
-  block-size: 25px;
+  block-size: 25px; 
   inline-size: 25px;
-  inset-block-start: 0;
-  inset-inline-end: 0;
+  inset-block-start: 0; 
+  inset-inline-end: 0; 
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
 }
@@ -149,7 +158,7 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  block-size: 25px;
+  block-size: 25px; 
   inline-size: 25px;
   inset-block-end: 0px;
   border-bottom: 1px solid var(--accent-color);
@@ -165,28 +174,26 @@
   font-weight: var(--main-text-font-weight);
 }
 
-.so-hard {
-  grid-column: 1/4;
+.section__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 0 10px;
   row-gap: 20px;
+}
+
+.so-hard {
+  grid-column: 1/4;
+
 }
 
 .to-reduce {
   grid-column: 1/4;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 0 10px;
-  row-gap: 20px;
+
 }
 
 .better-then {
   grid-column: 1/4;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 0 10px;
-  row-gap: 20px;
+
 }
 
 .in-pictures {
@@ -229,7 +236,6 @@
 
 .section-header {
   grid-column: 1/4;
-  color: var(--accent-color);
 } 
 
 .section-title {

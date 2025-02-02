@@ -22,6 +22,16 @@ p {
   margin: 0;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--main-font-size);
+  line-height: var(--main-font-line-height);
+  font-weight: var(--main-bold-font-weight);
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -40,3 +50,4 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
