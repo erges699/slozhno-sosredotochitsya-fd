@@ -32,7 +32,7 @@
   position: absolute;
   display: flex;
   align-items: center;
-  margin: 2px 10px 0 0;
+  margin: 12px 20px 0 0;
   inset-block-start: 0;
   inset-inline-end: 0;
   color: var(--accent-color);
@@ -149,8 +149,8 @@
   position: absolute;
   block-size: 25px;
   inline-size: 25px;
-  inset-block-start: 0;
-  inset-inline-end: 0;
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
 }
@@ -160,7 +160,8 @@
   position: absolute;
   block-size: 25px;
   inline-size: 25px;
-  inset-block-end: 0px;
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
 }
@@ -300,6 +301,20 @@ footer.decorated-zone::after {
     padding: 20px;
   }
 
+  .header__lamp-icon {
+    margin: 22px 30px 0 0;
+  }
+ 
+  .decorated-zone::before {
+    inset-block-start: 20px;
+    inset-inline-end: 20px; 
+  }
+
+  .decorated-zone::after {
+    inset-block-end: 20px;
+    inset-inline-start: 20px;
+  }
+
   .header__title {
     margin: 0 0 0 -20px;
   }
@@ -358,7 +373,7 @@ footer.decorated-zone::after {
 
   .section-header {
     grid-column: span 1;
-    grid-row: span 3;
+    grid-row: span 1;
   }
 
   .section-title {
