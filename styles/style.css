@@ -300,6 +300,16 @@ footer.decorated-zone::after {
     padding: 20px;
   }
 
+  header.decorated-zone::before {
+    inset-block-start: 20px;
+    inset-inline-end: 20px;
+  }
+
+  header.decorated-zone::after {
+    inset-block-end: 20px;
+    inset-inline-start: 20px;
+  }
+
   .header__title {
     margin: 0 0 0 -20px;
   }
@@ -323,6 +333,7 @@ footer.decorated-zone::after {
 
   .section__grid {
     padding: 0 20px;
+    row-gap: 0;
   }
 
   .so-hard {
@@ -335,7 +346,7 @@ footer.decorated-zone::after {
   }
 
   .to-reduce .section-header {
-    grid-column: 1/4;
+    grid-column: span 1;
   }
 
   .to-reduce .section-description-list {
