@@ -21,7 +21,7 @@
   /* Вам также нужно будет написать ряд подобных селекторов */
   --background-image: url("../images/cover-image-light.png");
   --background-color: #FFC2E6;
-  --button-color: var(--main-text-color);
+  --decoration-color: var(--main-text-color);
 }
 
 .theme-light .header__lamp-icon {
@@ -38,7 +38,7 @@
     --accent-hover-color: rgb(50 49  45 / 0.4);
     --background-image: url("../images/cover-image-light.png");
     --background-color: #FFC2E6;
-    --button-color: var(--main-text-color);
+    --decoration-color: var(--main-text-color);
   }
 
   .theme-auto .header__lamp-icon {
