@@ -460,11 +460,11 @@ footer.decorated-zone::after {
     margin: 0;
   }
 
-  /*.so-hard,
+  .so-hard,
   .to-reduce,
   .better-then {
     grid-template-columns: repeat(3, 1fr);
-  }*/
+  }
 
   .to-reduce {
     grid-template-rows: repeat(2, auto);
