@@ -214,6 +214,7 @@
 
 .main h2,
 h3,
+h4,
 h5,
 h6 {
   font-size: var(--main-font-size);
@@ -222,8 +223,6 @@ h6 {
 }
 
 .main h4 {
-  font-size: var(--main-font-size);
-  line-height: var(--main-font-line-height);
   font-weight: var(--main-regular-font-weight);
 }
 
@@ -350,7 +349,8 @@ footer.decorated-zone::after {
   }
 
   .to-reduce {
-    grid-column: 1/4;
+    /*grid-column: 1/4;*/
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .to-reduce .section-header {
@@ -358,7 +358,7 @@ footer.decorated-zone::after {
   }
 
   .to-reduce .section-description-list {
-    grid-column: 1/4;
+    grid-column: 1/5;
   }
 
   .better-then {
