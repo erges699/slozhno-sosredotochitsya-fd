@@ -22,5 +22,5 @@
   /* Вам также нужно будет написать ряд подобных селекторов */
   --background-image: url("../images/cover-image-dark.png");
   --background-color: #000028;
-  --button-color: var(--accent-color);
+  --decoration-color: var(--accent-color);
 }

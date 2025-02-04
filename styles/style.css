@@ -354,7 +354,7 @@ footer.decorated-zone::after {
   }
 
   .to-reduce .section-header {
-    grid-column: 1/4;
+    grid-column: span 1;
   }
 
   .to-reduce .section-description-list {
